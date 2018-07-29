@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/06/05 12:15:26.000.839,=C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2018/06/10 17:32:07.000.040,=C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2018/06/18 19:50:02.000.304,=C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2018/06/18 20:51:52.000.780,=C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\WebModuleUnit1.pas</Transaction>
+    <Transaction>2018/06/18 20:51:56.000.166,=C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\ServerConst1.pas</Transaction>
+    <Transaction>2018/06/18 20:52:19.000.792,C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\ServerConst1.pas=Z:\OlfSoftware\logiciels\NotesDeFraisMobiles\dev-delphi\serveur-Console-Linux\ServerConst1.pas</Transaction>
+    <Transaction>2018/06/18 20:52:22.000.349,C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\WebModuleUnit1.dfm=Z:\OlfSoftware\logiciels\NotesDeFraisMobiles\dev-delphi\serveur-Console-Linux\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2018/06/18 20:52:22.000.349,C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\WebModuleUnit1.pas=Z:\OlfSoftware\logiciels\NotesDeFraisMobiles\dev-delphi\serveur-Console-Linux\WebModuleUnit1.pas</Transaction>
+    <Transaction>2018/06/18 20:52:40.000.578,C:\Users\PATRICK PREMARTIN\Documents\Embarcadero\Studio\Projets\Project1.dproj=Z:\OlfSoftware\logiciels\NotesDeFraisMobiles\dev-delphi\serveur-Console-Linux\NotesDeFraisServeurREST.dproj</Transaction>
+    <Transaction>2018/06/19 10:29:58.000.698,=Z:\OlfSoftware\logiciels\NotesDeFraisMobiles\dev-delphi\uNotesDeFrais.pas</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<Pimac iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>

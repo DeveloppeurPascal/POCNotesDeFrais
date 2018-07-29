@@ -1,0 +1,72 @@
+object frmLogin: TfrmLogin
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object edtUser: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 0
+    KeyboardType = EmailAddress
+    ReturnKeyType = Next
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Email'
+  end
+  object edtPassword: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 1
+    ReturnKeyType = Go
+    Password = True
+    Position.X = 10.000000000000000000
+    Position.Y = 74.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Mot de passe'
+  end
+  object btnLogin: TButton
+    Align = Top
+    Default = True
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 138.000000000000000000
+    Size.Width = 620.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Connexion'
+    OnClick = btnLoginClick
+  end
+  object AnimationAttente: TRectangle
+    Align = Contents
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object AniIndicator1: TAniIndicator
+      Align = Center
+    end
+  end
+end

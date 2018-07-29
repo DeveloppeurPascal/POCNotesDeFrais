@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DA2CD8A5-C493-4843-80A3-EC0AAF306353}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="admin-FMX-macOS\AdminUsers.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="app-FMX-iOS-Android\NotesDeFraisPOC.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="gestion-VCL-Windows\NotesDeFraisValidation.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="serveur-Console-Linux\NotesDeFraisServeurREST.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="service-RTL-Windows\NotesDeFraisCheck.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="webIntrawebWindows\webIntrawebWindows.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AdminUsers">
+        <MSBuild Projects="admin-FMX-macOS\AdminUsers.dproj"/>
+    </Target>
+    <Target Name="AdminUsers:Clean">
+        <MSBuild Projects="admin-FMX-macOS\AdminUsers.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AdminUsers:Make">
+        <MSBuild Projects="admin-FMX-macOS\AdminUsers.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotesDeFraisPOC">
+        <MSBuild Projects="app-FMX-iOS-Android\NotesDeFraisPOC.dproj"/>
+    </Target>
+    <Target Name="NotesDeFraisPOC:Clean">
+        <MSBuild Projects="app-FMX-iOS-Android\NotesDeFraisPOC.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotesDeFraisPOC:Make">
+        <MSBuild Projects="app-FMX-iOS-Android\NotesDeFraisPOC.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotesDeFraisValidation">
+        <MSBuild Projects="gestion-VCL-Windows\NotesDeFraisValidation.dproj"/>
+    </Target>
+    <Target Name="NotesDeFraisValidation:Clean">
+        <MSBuild Projects="gestion-VCL-Windows\NotesDeFraisValidation.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotesDeFraisValidation:Make">
+        <MSBuild Projects="gestion-VCL-Windows\NotesDeFraisValidation.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotesDeFraisServeurREST">
+        <MSBuild Projects="serveur-Console-Linux\NotesDeFraisServeurREST.dproj"/>
+    </Target>
+    <Target Name="NotesDeFraisServeurREST:Clean">
+        <MSBuild Projects="serveur-Console-Linux\NotesDeFraisServeurREST.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotesDeFraisServeurREST:Make">
+        <MSBuild Projects="serveur-Console-Linux\NotesDeFraisServeurREST.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotesDeFraisCheck">
+        <MSBuild Projects="service-RTL-Windows\NotesDeFraisCheck.dproj"/>
+    </Target>
+    <Target Name="NotesDeFraisCheck:Clean">
+        <MSBuild Projects="service-RTL-Windows\NotesDeFraisCheck.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotesDeFraisCheck:Make">
+        <MSBuild Projects="service-RTL-Windows\NotesDeFraisCheck.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="webIntrawebWindows">
+        <MSBuild Projects="webIntrawebWindows\webIntrawebWindows.dproj"/>
+    </Target>
+    <Target Name="webIntrawebWindows:Clean">
+        <MSBuild Projects="webIntrawebWindows\webIntrawebWindows.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="webIntrawebWindows:Make">
+        <MSBuild Projects="webIntrawebWindows\webIntrawebWindows.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AdminUsers;NotesDeFraisPOC;NotesDeFraisValidation;NotesDeFraisServeurREST;NotesDeFraisCheck;webIntrawebWindows"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AdminUsers:Clean;NotesDeFraisPOC:Clean;NotesDeFraisValidation:Clean;NotesDeFraisServeurREST:Clean;NotesDeFraisCheck:Clean;webIntrawebWindows:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AdminUsers:Make;NotesDeFraisPOC:Make;NotesDeFraisValidation:Make;NotesDeFraisServeurREST:Make;NotesDeFraisCheck:Make;webIntrawebWindows:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
