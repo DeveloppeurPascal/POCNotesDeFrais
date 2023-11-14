@@ -1,0 +1,6 @@
+CREATE TABLE "notesdefrais" ( `code` INTEGER PRIMARY KEY AUTOINCREMENT, `utilisateur_code` INTEGER DEFAULT 0, `mobile_code` TEXT DEFAULT '', `datendf` TEXT DEFAULT '0000-00-00', `lieu` TEXT DEFAULT '', `montant` REAL DEFAULT 0, `avalider` TEXT DEFAULT 'O', `acceptee` TEXT DEFAULT 'N', `dateaccord` TEXT DEFAULT '0000-00-00' )
+CREATE TABLE `utilisateurs` ( `code` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `nom` TEXT NOT NULL DEFAULT '', `prenom` TEXT NOT NULL DEFAULT '', `email` TEXT NOT NULL DEFAULT '', `motdepasse` TEXT NOT NULL DEFAULT '' )
+CREATE INDEX `par_avalider` ON `notesdefrais` ( `avalider`, `code` )
+CREATE INDEX `par_email` ON `utilisateurs` ( `email`, `motdepasse`, `code` )
+CREATE INDEX `par_nom` ON `utilisateurs` ( `nom`, `prenom`, `code` )
+CREATE INDEX `par_utilisateur` ON `notesdefrais` ( `utilisateur_code`, `datendf`, `code` )
